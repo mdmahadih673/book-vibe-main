@@ -1,4 +1,3 @@
-import FooterPage from "./components/Footer/footer";
 import BooksPage from "./components/HomePage/books";
 import HeroPage from "./components/HomePage/hero";
 
@@ -7,7 +6,7 @@ export default function Home() {
     <div>
       <HeroPage />
       <BooksPage />
-      <FooterPage />
+      
     </div>
   );
 }

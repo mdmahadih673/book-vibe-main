@@ -35,9 +35,7 @@ const HeroPage = () => {
                                 View The List
                             </Link>
 
-                            <button className="px-7 py-3.5 border border-gray-300 hover:border-green-500 hover:text-green-600 text-gray-700 font-semibold rounded-lg transition-all duration-300">
-                                Explore Books
-                            </button>
+                                
 
                         </div>
                     </div>

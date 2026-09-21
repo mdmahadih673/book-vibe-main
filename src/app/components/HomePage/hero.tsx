@@ -1,5 +1,6 @@
 import Image from "next/image";
 import hero from "../../../assets/pngwing 1@2x.png";
+import Link from "next/link";
 
 const HeroPage = () => {
     return (
@@ -30,9 +31,9 @@ const HeroPage = () => {
 
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
-                            <button className="px-7 py-3.5 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                            <Link href="/Listed-Books" className="px-7 py-3.5 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                                 View The List
-                            </button>
+                            </Link>
 
                             <button className="px-7 py-3.5 border border-gray-300 hover:border-green-500 hover:text-green-600 text-gray-700 font-semibold rounded-lg transition-all duration-300">
                                 Explore Books

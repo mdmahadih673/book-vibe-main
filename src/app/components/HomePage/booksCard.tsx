@@ -54,6 +54,8 @@ const BooksCard = ({ books }: BookCardProps) => {
                     ))}
                 </div>
             </div>
+
+            
         </div>
     );
 };

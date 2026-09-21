@@ -12,7 +12,7 @@ const Navbar = () => {
         </li>
         <li>
             <Link
-                href="/"
+                href="/Listed-Books"
                 className="font-medium text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-300 rounded-lg"
             >
                 Listed Books
@@ -37,9 +37,9 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-white shadow-sm border-b border-gray-100 px-4 md:px-8 lg:px-12 py-3">
+        <div className="navbar  z-50 bg-white shadow-sm border-b border-gray-100 px-4 md:px-8 lg:px-12 py-3">
 
-            <div className="navbar-start">
+            <div className="navbar-start ">
                 <div className="dropdown">
                     <div
                         tabIndex={0}

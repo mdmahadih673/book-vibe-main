@@ -1,5 +1,6 @@
 import React from 'react';
-import { IBook } from '../type';
+import type { IBook } from '../type';
+import { getBooks } from '@/app/lib/books';
 import ListedBooksCard from './listedBooksCard';
 
 
@@ -7,26 +8,20 @@ export interface BookCardProps {
     book: IBook;
 }
 
-const getBooks = async (): Promise<IBook[]> => {
-    const res = await fetch("http://localhost:3000/booksData.json");
-    const data: IBook[] = await res.json()
-    return data
-}
-
-const ListedBooksPage = async () => {
-    const booksData = await getBooks()
+const ListedBooksPage = () => {
+    const booksData = getBooks()
 
     return (
-        <section className="min-h-screen bg-gradient-to-b from-green-50/60 via-white to-white">
+        <section className="min-h-screen bg-gradient-to-b from-emerald-50/60 via-white to-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
 
                 {/* Header */}
                 <div className="mx-auto mb-12 max-w-2xl text-center">
-                    <span className="rounded-full bg-green-100 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-green-700">
+                    <span className="rounded-full bg-emerald-100 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-700">
                         Library
                     </span>
                     <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-                        Listed <span className="text-green-600">Books</span>
+                        Listed <span className="text-emerald-600">Books</span>
                     </h1>
                     <p className="mt-4 text-base leading-7 text-gray-700">
                         তোমার সংগ্রহের সব বই এক জায়গায়। ব্রাউজ করো, রিভিউ পড়ো আর পরের বইটা বেছে নাও।

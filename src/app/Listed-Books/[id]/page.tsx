@@ -59,7 +59,7 @@ const ViewDetailsPage = async ({ params }: PageProps) => {
                         </p>
 
                         <p className="mt-3 flex items-center gap-2 text-sm">
-                            <span className="font-semibold text-yellow-500">
+                            <span className="font-semibold text-amber-500">
                                 &#9733; {data.rating}
                             </span>
                             <span className="text-gray-400">&middot;</span>

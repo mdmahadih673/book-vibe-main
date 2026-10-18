@@ -8,7 +8,7 @@ const BooksPage = () => {
     return (
         <div className="container mx-auto mt-16 px-4">
             <div className="mb-10 text-center">
-                <span className="rounded-full bg-rose-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-rose-700">
+                <span className="rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700">
                     Featured Books
                 </span>
 
@@ -31,7 +31,7 @@ const BooksPage = () => {
             <div className="mt-10 text-center">
                 <Link
                     href="/Listed-Books"
-                    className="inline-block px-8 py-3.5 bg-rose-500 hover:bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                    className="inline-block px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                 >
                     See All Books
                 </Link>
